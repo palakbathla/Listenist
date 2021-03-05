@@ -1,0 +1,410 @@
+/* Attributes common to the page or used widely */
+body{
+    /* background-color: rgb(12, 12, 27); */
+    padding:3px 28px 13px 28px;
+    color: white;
+    background-image: url("background3.jpg");
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    width: 20px;
+    height: 36px;
+}
+
+p{
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+}
+
+.heavy-font{
+    font-weight: 700;
+}
+/* For all mobile devices, hide queue section */
+
+aside{
+    visibility: hidden;
+}
+
+/* Top head section */
+header{
+    margin: 2vh 0vw;
+}
+
+.heading{
+    display: flex;
+}
+
+p{
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+}
+
+.heading p{
+    font-size: 25px;
+}
+
+#site-icon{
+    float: left;
+    margin-right: 1vw;
+}
+
+#music{
+    font-weight: 800;
+    color: rgb(255, 145, 0);
+    width: 65vw;
+}
+
+#right-heading{
+    display: flex;
+    flex-direction: row;
+}
+
+#search{
+    background-color: rgb(24, 24, 65);
+    color:  white;
+    background-image: url(icons/sear.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: auto;
+    padding-left: 30px;
+    height: 25px;
+    margin-right: 30px;
+    border: 0px;
+    border-radius: 10%;
+}
+
+#my-photo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
+}
+
+/* Main */
+
+#main{
+  display: flex;
+
+}
+
+#content{
+  width: 65vw;
+}
+
+/* Highlights */
+#highlights{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    overflow: hidden;
+}
+
+#highlight-images{
+    display: flex;
+    justify-content: space-around;
+    height: 35vh;
+    align-items: center;
+}
+
+.h-images{
+    height: 70%;
+    width: 30%;
+    transition: all 0.5s ease-in-out;
+}
+
+.h-images:hover{
+    width: 35%;
+    height: 90%;
+}
+
+/* Latest Releases */
+#latest-release {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.latest-song {
+  display: grid;
+  height: 6rem;
+  grid-gap: 15px;
+  grid-template-columns: 5.5rem 170px 30px;
+  padding: 10px;
+  margin-right: 40px;
+}
+
+.latest-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.latest-info {
+  display: flex;
+  align-items: center;
+}
+
+.latest-info p {
+  font-size: 0.9rem;
+}
+
+.latest-info span {
+  color: grey;
+}
+
+.latest-button {
+  color: white;
+  justify-content: flex-end;
+}
+
+/* Popular Artists */
+#popular-artists{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+#popular-artists img, #popular-artists span{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all 1s;
+}
+
+#popular-artists img:hover{
+    opacity: 0.5;
+}
+
+/* Genre Section */
+#genre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#genre img{
+    width: 190px;
+    height: 11rem;
+    margin-right: 10px;
+    margin-bottom: 3rem;
+}
+
+/* Latest English & Hindi */
+.latest-song-wise{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.latest-song-wise img{
+    width: 9.5rem;
+    height: 9.5rem;
+    margin-bottom: 10px;
+}
+
+.latest-song-wise p{
+    color: darkgrey;
+    margin-bottom: 15px;
+}
+
+#latest-hindi img{
+    width: 11rem;
+    height: 9.5rem;
+}
+
+/*Queue*/
+#queue {
+    flex-grow: 1;
+    color: white;
+    font-family: "Gelasio", serif;
+    max-width: 40vw;
+  }
+  
+  #queue-songs {
+    margin-top: 25px;
+    margin-left: 20px;
+    max-height: 70vh;
+    overflow-y: scroll;
+  }
+  
+  .q-song {
+    display: grid;
+    grid-template-columns: 30px 40px 170px 30px;
+    grid-gap: 2px;
+    margin-top: 10px;
+    height: 40px;
+  }
+  
+  .queue-number p {
+    color: grey;
+    font-size: 0.8rem;
+  }
+  
+  .q-song img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+  }
+  
+  .queue-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .queue-info {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .queue-info span {
+    font-size: 0.8rem;
+    color: grey;
+  }
+  
+  .queue-like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Footer section starts here*/
+/* this is the container for the whole footer */
+footer {
+	position: fixed;
+	bottom: 1px;
+	width: 100%;
+	height: 60px;
+	background-color: #282828;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+	z-index: 6;
+}
+/* footer is divided into 3 parts */
+/* 1. first part of the footer */
+.active-song-description {
+	/* border:1px solid white; */
+	height: 90%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+/* the current song which is being played, this is the image container for that. */
+#song-image {
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+}
+/* current song image */
+#song-image img {
+	width: 100%;
+	height: 100%;
+}
+/* heart and ban icon */
+.heart-and-ban-icon {
+	height: 100%;
+	padding-top: 4%;
+}
+/* song decscription */
+.song-desc {
+	margin-right: 1%;
+	margin-left: 1%;
+}
+/* song name */
+.song-desc div:nth-child(1) {
+	font-size: 14px;
+}
+/* song author */
+.song-desc div:nth-child(2) {
+	font-size: 12px;
+}
+
+/* 2. Second part of the footer*/
+.player {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+/* controls is the container for all the center controls of the player */
+.controls {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+}
+/* this is the song-duration slider */
+#slider {
+	width: 100%;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+/* ////////// */
+.time {
+	margin: 0px 10px;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+	width: 100%;
+}
+/* for audio and main center player */
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+}
+/* hover effect for the slider */
+.slider:hover {
+	opacity: 1;
+}
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background: #007bff;
+	cursor: pointer;
+}
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #4caf50;
+	cursor: pointer;
+}
+
+/* third part of the footer */
+/* this contains the extra icons and slider for volume */
+/* this is also a container */
+.extras {
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
